@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>📘 Smart Dictionary</h1>
+        <p class="subtitle">Search words. Learn meanings. Hear pronunciation.</p>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="wordInput" 
+                placeholder="Enter an English word..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="result" class="result-card hidden">
+            <h2 id="wordTitle"></h2>
+
+            <p class="phonetic" id="phonetic"></p>
+
+            <button id="audioBtn" class="audio-btn hidden">🔊 Play Pronunciation</button>
+
+            <div class="info">
+                <p><strong>Part of Speech:</strong> <span id="partOfSpeech"></span></p>
+                <p><strong>Meaning:</strong> <span id="meaning"></span></p>
+                <p><strong>Example:</strong> <span id="example"></span></p>
+            </div>
+        </div>
+
+        <p id="errorMsg" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

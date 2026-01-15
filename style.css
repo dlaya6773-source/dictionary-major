@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-container {
+    background: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #182848;
+}
+
+.subtitle {
+    margin: 10px 0 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #4b6cb7;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #3a57a3;
+}
+
+.result-card {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.phonetic {
+    font-style: italic;
+    color: #444;
+    margin: 5px 0;
+}
+
+.audio-btn {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: none;
+    background: #182848;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info p {
+    margin: 8px 0;
+}
+
+.error {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .search-box {
+        flex-direction: column;
+    }
+}
